@@ -85,3 +85,6 @@ export default function App() {
 	)
 }
 
+export function AAA() {
+    return <div></div>
+}
