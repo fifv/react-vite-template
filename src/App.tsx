@@ -6,7 +6,6 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import classNames from 'classnames'
 import { range } from 'lodash-es'
-import _ from 'lodash'
 
 export default function App() {
 	const [count, setCount] = useState(0)
@@ -77,7 +76,7 @@ export default function App() {
 
 
 			<div className='text-red-300'>
-				{ range(100000).map((i) => {
+				{ range(1000).map((i) => {
 					return <div key={ i }>{ i }</div>
 				}) }
 			</div>
