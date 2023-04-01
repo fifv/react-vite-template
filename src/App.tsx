@@ -4,8 +4,8 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
-import classNames from 'classnames'
 import { range } from 'lodash-es'
+import clsx from 'clsx'
 
 export default function App() {
     const [count, setCount] = useState(0)
@@ -33,7 +33,7 @@ export default function App() {
     }
     return (
         <div className="App">
-            <p className={ classNames("read-the-docs text-red-600 h-9 sticky top-0 backdrop-blur-sm") }>
+            <p className={ clsx("read-the-docs text-red-600 h-9 sticky top-0 backdrop-blur-sm") }>
                 Cligjogpk on the Vite and React logos to learn moreasdasdasd
             </p>
             <button className='border-violet-600 border p-2 rounded  ml-10' onClick={ () => { setCount(count + 1) } }>{ count }</button>
@@ -52,19 +52,19 @@ export default function App() {
                 <div className='first:rounded-l last:rounded-r p-2 bg-stone-500 hover:bg-stone-600 active:bg-stone-700 cursor-pointer select-none'>wef</div>
             </div>
             <div className='flex justify-center m-2'>
-                <div className={ classNames('border-solid border-gray-500 border-r border-t border-b first:border-l first:rounded-l last:rounded-r p-2 cursor-pointer select-none active:scale-y-95', isActive ? 'bg-gray-500 hover:bg-gray-500/90' : 'hover:bg-gray-500/20') } onClick={ () => { setIsActive(!isActive) } }>wef</div>
-                <div className={ classNames('border-solid border-gray-500 border-r border-t border-b first:border-l first:rounded-l last:rounded-r p-2 cursor-pointer select-none active:scale-y-95', 1 ? 'bg-gray-500 hover:bg-gray-500/90' : 'hover:bg-gray-500/10') } onClick={ () => { setIsActive(!isActive) } }>wef</div>
-                <div className={ classNames('border-solid border-gray-500 border-r border-t border-b first:border-l first:rounded-l last:rounded-r p-2 cursor-pointer select-none active:scale-y-95', 0 ? 'bg-gray-500 hover:bg-gray-500/90' : 'hover:bg-gray-500/10') } onClick={ () => { setIsActive(!isActive) } }>wef</div>
+                <div className={ clsx('border-solid border-gray-500 border-r border-t border-b first:border-l first:rounded-l last:rounded-r p-2 cursor-pointer select-none active:scale-y-95', isActive ? 'bg-gray-500 hover:bg-gray-500/90' : 'hover:bg-gray-500/20') } onClick={ () => { setIsActive(!isActive) } }>wef</div>
+                <div className={ clsx('border-solid border-gray-500 border-r border-t border-b first:border-l first:rounded-l last:rounded-r p-2 cursor-pointer select-none active:scale-y-95', 1 ? 'bg-gray-500 hover:bg-gray-500/90' : 'hover:bg-gray-500/10') } onClick={ () => { setIsActive(!isActive) } }>wef</div>
+                <div className={ clsx('border-solid border-gray-500 border-r border-t border-b first:border-l first:rounded-l last:rounded-r p-2 cursor-pointer select-none active:scale-y-95', 0 ? 'bg-gray-500 hover:bg-gray-500/90' : 'hover:bg-gray-500/10') } onClick={ () => { setIsActive(!isActive) } }>wef</div>
             </div>
 
 
             <div className='bg-white py-20 w-full'>
 
                 <div className='ml-20 rounded shadow-outline grid grid-cols-2 h-16 w-16 '>
-                    <div className={ classNames('active:scale-95', { 'text-white bg-slate-400 ': isActive }, isActive ? 'hover:bg-slate-400/90 rounded' : 'hover:bg-slate-400/10 rounded') } onClick={ () => { setIsActive(!isActive) } }></div>
-                    <div className={ classNames('active:scale-95', { 'text-white bg-slate-400 ': 0 }, 0 ? 'hover:bg-slate-400/90 rounded' : 'hover:bg-slate-400/10 rounded') } onClick={ () => { setIsActive(!isActive) } }></div>
-                    <div className={ classNames('active:scale-95', { 'text-white bg-slate-400 ': 0 }, 0 ? 'hover:bg-slate-400/90 rounded' : 'hover:bg-slate-400/10 rounded') } onClick={ () => { setIsActive(!isActive) } }></div>
-                    <div className={ classNames('active:scale-95', { 'text-white bg-slate-400 ': 0 }, 0 ? 'hover:bg-slate-400/90 rounded' : 'hover:bg-slate-400/10 rounded') } onClick={ () => { setIsActive(!isActive) } }></div>
+                    <div className={ clsx('active:scale-95', { 'text-white bg-slate-400 ': isActive }, isActive ? 'hover:bg-slate-400/90 rounded' : 'hover:bg-slate-400/10 rounded') } onClick={ () => { setIsActive(!isActive) } }></div>
+                    <div className={ clsx('active:scale-95', { 'text-white bg-slate-400 ': 0 }, 0 ? 'hover:bg-slate-400/90 rounded' : 'hover:bg-slate-400/10 rounded') } onClick={ () => { setIsActive(!isActive) } }></div>
+                    <div className={ clsx('active:scale-95', { 'text-white bg-slate-400 ': 0 }, 0 ? 'hover:bg-slate-400/90 rounded' : 'hover:bg-slate-400/10 rounded') } onClick={ () => { setIsActive(!isActive) } }></div>
+                    <div className={ clsx('active:scale-95', { 'text-white bg-slate-400 ': 0 }, 0 ? 'hover:bg-slate-400/90 rounded' : 'hover:bg-slate-400/10 rounded') } onClick={ () => { setIsActive(!isActive) } }></div>
                     {/* <div className='hover:bg-gray-100 rounded'></div>
 					<div className='hover:bg-gray-100 rounded'></div>
 					<div className='hover:bg-gray-100 rounded'></div> */}
